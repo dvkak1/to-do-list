@@ -51,7 +51,12 @@ let createPost = () => {
 }
 
 //Delete functionality 
-
 let deletePost = (e) => {
+    e.parentElement.parentElement.remove();
+};
+
+//Edit/Update functionality
+let editPost = (e) => {
+    input.value = e.parentElement.preventElementSibling.innerHTML;
     e.parentElement.parentElement.remove();
 };
