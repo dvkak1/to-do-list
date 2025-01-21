@@ -40,18 +40,33 @@ body {
     gap: 50px;
 }
 
-#posts {
-    width: 400px;
+#tasks {
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
 }
 
 i {
  cursor: pointer;
 }
 
-#posts div {
+#tasks div {
+  border: 3px solid #abcea1;
+  background-color: #e2eede;
+  border-radius: 6px;
+  padding: 5px;
+  display: grid;
+  gap: 4px;
+}
+
+#tasks div .options {
+    justify-self: center;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap:20px;
+}
+
+#tasks div .options i {
+  cursor: pointer;
 }
 
 .options {
