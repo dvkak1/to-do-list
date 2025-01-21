@@ -33,10 +33,11 @@ let data = {};
 let acceptData = () => {
     data["text"] = input.value;
     console.log(data);
-    
+
     createPost();
 };
 
+//Create functionality 
 let createPost = () => {
     posts.innerHTML += `  
      <div>
